@@ -8,6 +8,21 @@
 </head>
 <body>
 
+    <script>
+        $(document).ready(function(){
+            var modWidth=70;
+            $("div").click(function(){
+                if (modWidth<60){
+                $(this).width(modWidth).addClass("next").css("background-color","blue");
+                modWidth=70;
+                }else{
+                    $(this).width(modWidth).css("background-color","red");
+                    modWidth=30;
+                }
+            });            
+        });
+    </script>
+
     
     <div>1</div>
     <div>2</div>
