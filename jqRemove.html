@@ -7,6 +7,20 @@
     <script src="../js/jquery-3.7.1.min.js"></script>
 </head>
 <body>
+    <script>
+        $(document).ready(function(){
+            $("#button1").click(function(){
+                // container remove
+                // 선택요소와 자식 모두 삭제
+                $(".container").remove();
+            });
+            $("#button2").click(function(){
+                // container empty
+                // 선택요소의 자식만 삭제
+                $(".container").empty();
+            });
+        });
+    </script>
 
     
     <button id="button1">remove</button>
