@@ -7,6 +7,19 @@
     <script src="../js/jquery-3.7.1.min.js"></script>
 </head>
 <body>
+    <script>
+        $(document).ready(function(){
+            $("#button1").click(function(){
+                // div1의 칼라값 가져오기
+                var color=$("#div1").css("background-color");
+                $("#result").text("bgcolor:"+color);
+            });
+            // button2를 누르면 css 배경 빨강으로
+            $("#button2").click(function(){
+                $("#div1").css("background-color","red");
+            });
+        });
+    </script>
 
 
     <div id="div1" style="background-color: green;"></div>
